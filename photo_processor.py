@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-width, height = (2,2)
-resistance  = [[None for i in range(2)] for j in range(2)]
+width, height = (5,8)
+resistance  = [[None for i in range(width)] for j in range(height)]
 maxresistance = 0.0
-f_q = [[None for i in range(2)] for j in range(2)]
+f_q = [[None for i in range(width)] for j in range(height)]
 
 for i in range(height):
     for j in range(width):
