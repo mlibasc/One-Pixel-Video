@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #variable initialization
-width, height = (5,8)
+width, height = (12,7)
 
 #resistance and conductance data array initialization
 resistance  = [[0 for i in range(width)] for j in range(height)]
@@ -14,6 +14,8 @@ f_q_conductance = [[0 for i in range(width)] for j in range(height)]
 #asks user for resistance input from a photoresistor pointed at their image
 for i in range(height):
     for j in range(width):
+        print("i = ", i)
+        print("j = ", j)
         resistance[i][j] =  input()
         while((resistance[i][j]) == ""):
             print("try again")
