@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 #variable initialization 
-width = 5
+width = 3
 height = 3
 frame = 50
 #index of photoresistor array
@@ -27,7 +27,7 @@ def updatefig(*args):
 
 #grabbing photoresistor values from csv file and storing into a data array
 #possible animation files to run (1st iteration to last): stick_man_waving.csv, stick_man_waving_detailed.csv, arm_wave.csv
-with open('arm_wave.csv', newline='\n') as csvfile:
+with open('moving_square.csv', newline='\n') as csvfile:
     data = list(csv.reader(csvfile))
 
 #reorganization of data into an array of frames
